@@ -1,0 +1,13 @@
+<style>
+@media (max-width: 640px) {
+.locationSection .collapsibleTab__content {
+    border-bottom: none;
+}
+}
+</style>
+
+<script>
+if ( $(window).width() < 640) {
+  $('#product-locations').prependTo('.tabs');
+} 
+</script>

@@ -1,0 +1,36 @@
+<a class="top-10-a" href="#">
+<div class="top-10">
+    Can't decide? Checkout our top 10 favourite experiences
+</div>
+</a>
+
+
+<style>
+@media screen and (max-width: 640px) {
+  .top-10 {
+      margin: 20px 10px;
+}
+}
+
+.top-10 {
+    width: 100%;
+    margin: 0 10px 20px 10px;
+    border-bottom: 1px solid rgba(165,167,173,0.6);
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 25px;
+    cursor: pointer;
+}
+
+.top-10:hover {
+    color: #e10a0a;
+}
+
+</style>
+
+<script>
+// Move top 20 href into the can't decide link
+IF ($('.top20linktarget').text == "Top 20") {
+  $('.top20linktarget').clone to ('.top-10-a')
+}
+</script>
