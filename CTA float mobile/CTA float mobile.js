@@ -2,9 +2,9 @@ var utils = window['optimizely'].get('utils');
 utils.waitForElement('body').then(function(){
 
   var navWrap = $('.addSection__formTop'),
-        nav = $('.addSection__form'),
-                startPosition = nav.offset().top,
-        stopPosition = $('.js-recentlyviewed').offset().top;
+      nav = $('.addSection__form'),
+      startPosition = nav.offset().top,
+      stopPosition = $('.stop-here').offset().top;
 
     $(document).scroll(function () {
         var y = $(this).scrollTop();
