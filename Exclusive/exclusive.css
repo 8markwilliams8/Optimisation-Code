@@ -1,0 +1,16 @@
+.mw-exclusive {
+    background-color: #e10a0a;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+    padding: 5px;
+}
+
+.mw-newFlag {
+  background-color: #ffffff;
+  color: #e10a0a;
+  text-align: center;
+  font-weight: 700;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
