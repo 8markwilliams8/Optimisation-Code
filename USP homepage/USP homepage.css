@@ -1,0 +1,62 @@
+@media (max-width: 768px) {
+.usps {
+	height: 80px;
+  overflow: hidden;
+}
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+.usps {
+	margin-bottom: 20px;
+}
+}
+
+@media (min-width: 640px) {
+.container--topSpaced {
+    margin-top: 20px;
+}
+}
+
+.usp {
+  border: 1px solid #ECEFF2;
+  overflow: hidden;
+  height: 80px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.usp__link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.usp__textWrap {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.usp__text {
+font-size: 18px;
+font-size: 1.125rem;
+font-weight: 600;
+color: #e10a0a;
+text-transform: uppercase;
+display: inline;
+}
+
+.usp-para {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.usp:hover {
+  background: #ECEFF2;
+}
