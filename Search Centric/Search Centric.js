@@ -1,13 +1,19 @@
 $(document).ready(function() {
 
-  $('.homeHeros').css('display','none');
+  if ($(window).width() < 979) {
+
+	}
+	else {
+	$('.homeHeros').css('display','none');
+	}
+
 
   var i = 1;
   var j = 1;
   var heroSearchImg = [
-    'https://s1.postimg.org/vm3x45znj/shard.jpg',
-    'https://s1.postimg.org/dxc6cjnwf/spa.jpg',
-    'https://s18.postimg.org/ionaddvd5/paintball.jpg'
+    'https://www.virginexperiencedays.co.uk/files/opt-test-shard.jpg',
+    'https://www.virginexperiencedays.co.uk/files/opt-test-spa.jpg',
+    'https://www.virginexperiencedays.co.uk/files/opt-test-paintball.jpg'
 
   ];
 

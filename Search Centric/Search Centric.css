@@ -1,7 +1,7 @@
 /*Move search bar CSS*/
 
 /*Mobile & Tablet*/
-@media (max-width: 1024px) {
+@media (max-width: 979px) {
 
 .c-search-hero {
     display: none;
@@ -36,6 +36,7 @@ and (min-device-width : 768px)
     right: 10px!important;
 }
 }
+
 
 /*Desktop*/
 @media (min-width: 980px) {
@@ -91,7 +92,7 @@ and (min-device-width : 768px)
   height: 360px;
   background-size: cover;
   background-position: center center;
-  background-image: url(https://s18.postimg.org/ionaddvd5/paintball.jpg);
+  background-image: url(https://www.virginexperiencedays.co.uk/files/opt-test-paintball.jpg);
   transition: background 0.5s linear;
   margin-bottom: 18px
 }
