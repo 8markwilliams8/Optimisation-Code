@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+  $('.homeHeros').css('display','none');
+
   var i = 1;
   var j = 1;
   var heroSearchImg = [
@@ -24,4 +27,4 @@ $(document).ready(function() {
 
     }, 6000);
 
-  });
+});
