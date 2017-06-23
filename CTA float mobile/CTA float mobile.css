@@ -1,15 +1,17 @@
-.stickBot {
-    padding: 0px 20px 10px 20px!important;
-    transition: all 1s ease;
-  	z-index: 1000;
-}
+@media screen and (max-width: 640px) {
 
-.addSection__form {
+.stickBot {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 45px 20px 45px 20px;
+    padding: 18px;
     background-color: #ffffff;
-    transition: all 1s ease;
+    z-index: 1000;
+}
+
+.addSection {
+		z-index: 1000;
+}
+
 }
