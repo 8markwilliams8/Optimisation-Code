@@ -39,3 +39,17 @@ $.each(myObjects, function(i, obj) {
     $(obj.classname).show();
   }
 });
+
+//////HTML ProdNavBar
+
+<div class="prodInfoNavTop">
+<div class="prodInfoNav">
+  <ul>
+    <a class="mw-overviewLink" href="#mw-overview"><li>Overview</li></a>
+    <a class="mw-productDetailsLink" href="#mw-productdetails"><li>Product Details</li></a>
+    <a class="mw-productChoicesLink" href="#mw-productchoices"><li>Product Choice</li></a>
+    <a class="mw-needToKnowLink" href="#mw-needtoknow-theessentialbits"><li>Need to Know</li></a>
+    <a class="mw-reviewsLink" href="#mw-reviews"><li>Reviews</li></a>
+  </ul>
+</div>
+</div>
