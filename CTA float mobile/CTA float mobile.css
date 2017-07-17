@@ -15,3 +15,32 @@
 }
 
 }
+
+
+
+@media screen and (max-width: 640px) {
+
+.stickBot {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 18px;
+    background-color: #ffffff;
+    z-index: 1000;
+}
+
+  .applePayWrap {
+  background-color: #e10a0a!important;
+  padding: 10px!important;
+  }
+
+  .apple-pay-button-with-text--productPage {
+  margin-top: 6px!important;
+  }
+
+.addSection {
+		z-index: 1000;
+}
+
+}
