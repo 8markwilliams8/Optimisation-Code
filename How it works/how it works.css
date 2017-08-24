@@ -1,0 +1,44 @@
+@media (max-width: 767px){
+  .flex-item {
+    /*flex-direction: column;*/
+    align-items: center;
+  	justify-content: center;
+    text-align: center;
+  }
+  .howIcon {
+  	display: none;
+  }
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-item {
+  display: flex;
+  align-items: center;
+  flex: 1 0 5em;
+}
+
+.howContainer {
+  margin-bottom: 20px;
+  border: solid 1px rgba(165,167,173,0.68);
+  padding: 5px;
+}
+.howIcon {
+	padding: 10px
+}
+.howIcon img {
+  width: 45px;
+}
+.howTitle {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #e10a0a;
+  text-transform: uppercase;
+  margin: 0;
+}
+.howPara {
+  font-size: 0.8rem;
+  margin: 0;
+}
