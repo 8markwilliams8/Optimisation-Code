@@ -1,11 +1,3 @@
-.mw-exclusive {
-    background-color: #e10a0a;
-    color: #ffffff;
-    text-align: center;
-    font-weight: 700;
-    padding: 5px;
-}
-
 .mw-newFlag {
     background-color: #ffffff;
     color: #292d2f;
@@ -13,4 +5,18 @@
     font-weight: 400;
     padding: 5px;
     border-bottom: 1px solid #ddd;
+}
+
+.strikeWas {
+    text-decoration: line-through;
+}
+
+.bigPrice {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #e10a0a;
+}
+
+.bigSave {
+    color: #e10a0a;
 }

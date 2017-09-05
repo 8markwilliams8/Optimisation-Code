@@ -24,7 +24,18 @@ $(".wasPrice").text(function() {
 	});
 
 //Next-Prev Ctrls
-//Next Ctrl
+
+  setInterval(function(){
+
+    if ($(".usp-current").next(".usp").length === 0) {
+        $(".usp-current").removeClass("usp-current").siblings(":nth-child(1)").addClass("usp-current");
+    }
+    else {
+        $(".usp-current").removeClass("usp-current").next(".usp").addClass("usp-current");
+    }
+
+}, 4000);
+
   $(".next-mw").click(function() {
     if ($(".usp-current").next(".usp").length === 0) {
         $(".usp-current").removeClass("usp-current").siblings(":nth-child(1)").addClass("usp-current");
@@ -35,7 +46,7 @@ $(".wasPrice").text(function() {
 
 });
 
-//Prev Ctrl
+
   $(".prev-mw").click(function() {
     if ($(".usp-current").prev(".usp").length === 0) {
         $(".usp-current").removeClass("usp-current").siblings(":nth-child(3)").addClass("usp-current");
@@ -45,10 +56,7 @@ $(".wasPrice").text(function() {
     }
 
 });
-
-//Hover wiggle
-  $(".arrow").hover(function () {
+   $(".arrow").hover(function () {
     $(this).toggleClass("swing");
  });
-
 });
