@@ -1,0 +1,106 @@
+@media (max-width: 640px) {
+
+.hiw-title {
+  margin: 0!important;
+  cursor: default;
+}
+
+.hiw-title h3 {
+  border-bottom: none!important;
+  line-height: 1.5em!important;
+  margin: 0!important;
+  padding: 30px!important;
+}
+
+.hiw-title h3 span {
+    background:#fff;
+    padding:0!important;
+}
+
+.formLabel__textBox {
+  margin-top: 0!important;
+}
+
+.helpBox__title {
+  max-width: 100%!important;
+}
+
+.formLabel__inlineButtonContainer {
+  width: 100%!important;
+}
+
+.formLabel__button {
+    width: 50%!important;
+}
+
+}
+
+.helpBox {
+    padding: 55px 30px;
+    height: 200px;
+  }
+
+.formLabel__inlineButtonContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    width: 50%;
+}
+
+
+.hiw-title {
+  margin: 0 10px;
+  cursor: default;
+}
+
+.hiw-title h3 {
+   width: 100%;
+   text-align: center;
+   border-bottom: 1px solid #ECEFF2;
+   line-height: 0.1em;
+   margin: 30px 0 45px;
+}
+
+.hiw-title h3 span {
+    background:#fff;
+    padding:0 40px;
+}
+
+.hiw-container {
+    margin-top: 20px;
+}
+
+.hiw {
+    display: block;
+    border: 1px solid #ECEFF2;
+    overflow: hidden;
+    height: 80px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    cursor: default;
+}
+
+.hiw__textWrap {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.hiw__text {
+    font-size: 18px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #e10a0a;
+    text-transform: uppercase;
+    display: inline;
+}
+
+.hiw__para {
+    font-size: 0.9rem;
+    margin: 0;
+    text-transform: lowercase;
+    color: #292d2f;
+}
