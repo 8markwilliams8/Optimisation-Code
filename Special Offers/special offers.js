@@ -4,33 +4,54 @@ utils.waitForElement('body').then(function(){
 //Change H1 Title
 if ($('.breadcrumbs__item').length > 3) {
  var h1SubTitle = $('.breadcrumbs__item:nth-child(3)').text();
- $('.categoryHeading').html('<h1 class="hide-on-mobile categoryHeading">'+h1SubTitle+' Special Offers</h1>');
+ $('.categoryHeading').html('<h1 class="hide-on-mobile categoryHeading">'+h1SubTitle+' Offers</h1>');
  }
 
 //SO popular categories dynamic
-
+if ($('.breadcrumbs li').length < 5) {
 //Grab and create variables
+
+var categoryFilter = $('.filterGroup__title:contains("Category")').closest('.filterGroup');
 
 var soPopName1 = "Less than £50";
 var soPopLink1 = $('.filterGroup__name:contains("Less than £50")').closest('.filterGroup__link a').attr('href');
 var soPopName2 = "Less than £100";
 var soPopLink2 = $('.filterGroup__name:contains("£50 to £100")').closest('.filterGroup__link a').attr('href');
-var soPopName3 = $('.filterGroup__name:visible:eq(1)').text();
-var soPopLink3 = $('.filterGroup__link:visible:eq(1) a').attr("href");
-var soPopName4 = $('.filterGroup__name:visible:eq(2)').text();
-var soPopLink4 =$('.filterGroup__link:visible:eq(2) a').attr("href");
-var soPopName5 = $('.filterGroup__name:visible:eq(3)').text();
-var soPopLink5 =$('.filterGroup__link:visible:eq(3) a').attr("href");
-var soPopName6 = $('.filterGroup__name:visible:eq(4)').text();
-var soPopLink6 =$('.filterGroup__link:visible:eq(4) a').attr("href");
+var soPopName3 = categoryFilter.find('.filterGroup__name:eq(0)').text();
+var soPopLink3 = categoryFilter.find('.js-cat-filter-link:eq(0)').attr("href");
+var soPopName4 = categoryFilter.find('.filterGroup__name:eq(1)').text();
+var soPopLink4 = categoryFilter.find('.js-cat-filter-link:eq(1)').attr("href");
+var soPopName5 = categoryFilter.find('.filterGroup__name:eq(2)').text();
+var soPopLink5 = categoryFilter.find('.js-cat-filter-link:eq(2)').attr("href");
+var soPopName6 = categoryFilter.find('.filterGroup__name:eq(3)').text();
+var soPopLink6 = categoryFilter.find('.js-cat-filter-link:eq(3)').attr("href");
+var soPopName7 = categoryFilter.find('.filterGroup__name:eq(4)').text();
+var soPopLink7 = categoryFilter.find('.js-cat-filter-link:eq(4)').attr("href");
+
 
 //Insert into the SO popular nav
 
-$('.soPopular').html("<div class=\"soPopular\"><h3>Popular Categories</h3><a href="+soPopLink1+"><li>"+soPopName1+"</li></a><a href="+soPopLink2+"><li>"+soPopName2+"</li></a><a href="+soPopLink3+"><li>"+soPopName3+"</li></a><a href="+soPopLink4+"><li>"+soPopName4+"</li></a><a href="+soPopLink5+"><li>"+soPopName5+"</li></a><a href="+soPopLink6+"><li>"+soPopName6+"</li></a></div>");
+$('.soPopular').html("<div class=\"soPopular\"><h3>Popular Categories</h3><a href="+soPopLink1+"><li>"+soPopName1+"</li></a><a href="+soPopLink2+"><li>"+soPopName2+"</li></a><a href="+soPopLink3+"><li>"+soPopName3+"</li></a><a href="+soPopLink4+"><li>"+soPopName4+"</li></a><a href="+soPopLink5+"><li>"+soPopName5+"</li></a><a href="+soPopLink6+"><li>"+soPopName6+"</li></a><a href="+soPopLink7+"><li>"+soPopName7+"</li></a></div>");
 
-$('.soMobile').html("<div class=\"soMobile\"><h3>Popular Categories</h3><div class=\"col-xs-6\"><a href="+soPopLink1+"><li>"+soPopName1+"</li></a><a href="+soPopLink2+"><li>"+soPopName2+"</li></a><a href="+soPopLink3+"><li>"+soPopName3+"</li></div><div class=\"col-xs-6\"></a><a href="+soPopLink4+"><li>"+soPopName4+"</li></a><a href="+soPopLink5+"><li>"+soPopName5+"</li></a><a href="+soPopLink6+"><li>"+soPopName6+"</li></a></div></div>");
+$('.soMobile').html("<div class=\"soMobile\"><h3>Popular Categories</h3><div class=\"col-xs-6\"><a href="+soPopLink1+"><li>"+soPopName1+"</li></a><a href="+soPopLink2+"><li>"+soPopName2+"</li></a><a href="+soPopLink3+"><li>"+soPopName3+"</li></div><div class=\"col-xs-6\"></a><a href="+soPopLink4+"><li>"+soPopName4+"</li></a><a href="+soPopLink5+"><li>"+soPopName5+"</li></a><a href="+soPopLink6+"><li>"+soPopName6+"</li></a><a href="+soPopLink7+"><li>"+soPopName7+"</li></a></div></div>");
 
+$('.soPopular a:eq(6)').hide();
 
+}
+
+else {
+
+  var h1SubTitle = $('.breadcrumbs__item:nth-child(4)').text();
+  $('.categoryHeading').html('<h1 class="hide-on-mobile categoryHeading">'+h1SubTitle+' Offers</h1>');
+
+}
+
+if ($('.breadcrumbs li').length > 3) {
+$('.so-ad-container').hide();
+$('.catIntro__text').css({'height':'200px','min-height':'200px'});
+$('.soPopular a:eq(2)').hide();
+$('.soPopular a:eq(6)').show();
+}
 
 //Special Offers
 $('.productCard').each(function(i, obj) {
@@ -69,7 +90,7 @@ newFlag.hide();
   $('.so-ad-container').hover(function(ev){
       clearInterval(interval);
   }, function(ev){
-      timer()
+      timer();
   });
 
   //Next-Prev Ctrls
