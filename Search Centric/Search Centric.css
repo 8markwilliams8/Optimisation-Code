@@ -1,0 +1,141 @@
+/*Move search bar CSS*/
+
+/*Mobile & Tablet*/
+@media (max-width: 979px) {
+
+.c-search-hero {
+    display: none;
+}
+
+}
+
+@media only screen
+and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+{
+.c-search-hero {
+    display: none;
+}
+
+.headerSearch {
+    display: block!important;
+    float: right!important;
+    margin-top: 0!important;
+    width: 61%!important;
+    position: relative!important;
+}
+
+.headerSearch__wrapper {
+    padding: 0 10px!important;
+    position: relative!important;
+    margin-left: auto!important;
+}
+
+.searchResults {
+    left: -90%!important;
+    right: 10px!important;
+}
+}
+
+
+/*Desktop*/
+@media (min-width: 980px) {
+
+	.container--topSpaced {
+    margin-top: 20px;
+}
+
+  .headerSearch {
+    display: block;
+    float: right;
+    margin-top: 370px;
+    width: 450px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 200;
+}
+
+  .headerSearch__wrapper {
+    max-width: 450px;
+}
+
+.headerSearch__text {
+    font-size: 1rem;
+    border: 0;
+    border-radius: 0;
+    height: 55px;
+    color: #292d2f;
+    padding-left: 25px;
+    padding-right: 25%;
+}
+
+.searchResults {
+    left: -40%;
+    right: -40%;
+    top: 150%
+}
+
+  .headerSearch__buttonText {
+    position: static;
+    text-transform: lowercase;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+  /*Search Hero*/
+
+  .c-search-hero {
+  position: relative;
+  height: 360px;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(https://www.virginexperiencedays.co.uk/files/opt-test-paintball.jpg);
+  transition: background 0.5s linear;
+  margin-bottom: 18px
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(31, 31, 31, 0.25);
+}
+
+.c-search-content {
+  position: relative;
+  top: 51%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+}
+.c-search-content h3 {
+  font-size: 32px;
+  font-weight: 300;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  letter-spacing: -.1;
+}
+.c-search-content h3 strong {
+  font-weight: 700;
+}
+.c-search-content p {
+  font-size: 13px;
+  color: #fff;
+  margin: 100px 0 0;
+}
+.c-search-content p a {
+  color: #fff;
+  text-decoration: underline;
+}
+  .icon-search {
+	vertical-align: middle;
+}
+
+}

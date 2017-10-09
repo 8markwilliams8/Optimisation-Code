@@ -1,0 +1,386 @@
+/*Mobile Styling*/
+@media screen and (max-width: 1024px) {
+
+.arrow-left {
+    left: -20px!important;
+}
+
+.arrow-right {
+    right: -20px!important;
+}
+}
+@media screen and (max-width: 640px) {
+
+.so-ad-container {
+      margin-top: 10px!important;
+}
+
+.so-save {
+      width: 40%!important;
+      padding: 10px!important;
+      font-size: 1.2rem!important;
+}
+
+.so-title {
+    margin: 65px 40px 0 30px!important;
+}
+
+.soMobile {
+  display: block!important;
+  margin: 15px;
+}
+
+.soMobile li {
+  border: 1px solid #292d2f;
+  margin: 5px;
+  padding: 6px;
+  text-align: center;
+  list-style: none;
+  min-height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.soMobile h3 {
+  text-align: center;
+}
+
+.soPopular {
+  display: none!important;
+}
+
+.catIntro__text {
+    height: 210px!important;
+}
+
+.ad1:hover {
+  background: linear-gradient(rgba(45, 43, 43, 0.29),rgba(255, 0, 0, 0.44)), url(https://www.virginexperiencedays.co.uk/content/img/product/large/double-supercar-blast-plus-24104205.jpg)!important;
+  background-size: cover!important;
+}
+
+.ad2:hover {
+  background: linear-gradient(rgba(45, 43, 43, 0.29),rgba(255, 0, 0, 0.44)), url(https://www.virginexperiencedays.co.uk/content/img/product/large/two-night-coastal-escape-01114647.jpg)!important;
+  background-size: cover!important;
+}
+
+.ad3:hover {
+  background: linear-gradient(rgba(45, 43, 43, 0.29),rgba(255, 0, 0, 0.44)), url(https://www.virginexperiencedays.co.uk/content/img/product/large/PHELAD-SP1__03.jpg)!important;
+  background-size: cover!important;
+}
+
+}
+
+/*Grid view*/
+.js-grid-view .unstrikeWas {
+    display: none;
+}
+
+.js-grid-view .bigPrice {
+    display: none;
+}
+
+/*Special Offer Popular Categories*/
+
+.soPopular {
+  list-style: none;
+  text-align: center;
+  margin: 20px auto 30px;
+}
+
+.soPopular li {
+  display: inline-block;
+  padding: 15px;
+  margin: 5px;
+  border: 1px solid #292d2f;
+  cursor: pointer;
+}
+
+.soPopular li:hover {
+    background-color: #292D2F;
+    color: #ffffff;
+}
+
+/*Highlight savings, discount and pricing*/
+
+.mw-newFlag {
+    background-color: #eceff2;
+    color: #292d2f;
+    text-align: center;
+    font-weight: 400;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: default;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.unstrikeWas {
+    padding: 8px;
+}
+
+.strikeWas {
+    text-decoration: line-through;
+}
+
+.bigPrice {
+    font-weight: 700;
+    padding: 8px;
+}
+
+.bigSave {
+    font-weight: 700;
+    padding: 8px;
+}
+
+/******Carousel******/
+
+/*Ad images*/
+.ad1 {
+    background: linear-gradient(rgba(45, 43, 43, 0.29),rgba(255, 0, 0, 0.44)), url(https://www.virginexperiencedays.co.uk/content/img/product/large/double-supercar-blast-plus-24104205.jpg);
+    background-size: cover;
+}
+
+.ad1:hover {
+    background: linear-gradient(rgba(255, 0, 0, 0.8),rgba(255, 0, 0, 0.8)), url(https://www.virginexperiencedays.co.uk/content/img/product/large/double-supercar-blast-plus-24104205.jpg);
+    background-size: cover;
+}
+
+.ad2 {
+    background: linear-gradient(rgba(45, 43, 43, 0.29),rgba(255, 0, 0, 0.44)), url(https://www.virginexperiencedays.co.uk/content/img/product/large/PHELAD-SP1__03.jpg);
+    background-size: cover;
+
+}
+.ad2:hover {
+  background: linear-gradient(rgba(255, 0, 0, 0.8),rgba(255, 0, 0, 0.8)), url(https://www.virginexperiencedays.co.uk/content/img/product/large/PHELAD-SP1__03.jpg);
+  background-size: cover;
+}
+
+.ad3 {
+    background: linear-gradient(rgba(45, 43, 43, 0.29),rgba(255, 0, 0, 0.44)), url(https://www.virginexperiencedays.co.uk/content/img/product/large/indulgent-spa-day-with-02161523.jpg);
+    background-size: cover;
+
+}
+.ad3:hover {
+  background: linear-gradient(rgba(255, 0, 0, 0.8),rgba(255, 0, 0, 0.8)), url(https://www.virginexperiencedays.co.uk/content/img/product/large/indulgent-spa-day-with-02161523.jpg);
+  background-size: cover;
+}
+
+
+/*Ad text styling*/
+
+.so-save {
+    background-color: #ffffff;
+    width: 30%;
+    padding: 15px;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.so-title {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-align: left;
+    line-height: 1.25;
+    margin: 100px 50px 0 30px;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.24), 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.so-was {
+  margin: 15px 0 0 30px;
+  text-align: left;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.so-now {
+  margin: -8px 0 0 30px;
+  text-align: left;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.so-price {
+    font-size: 2rem;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.24), 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/*Ad containers*/
+
+.so-ad {
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: opacity .25s ease-out;
+   -moz-transition: opacity .25s ease-out;
+   -webkit-transition: opacity .25s ease-out;
+  opacity: 0;
+  height: 0;
+
+}
+
+.so-ad a {
+  color: #292d2f;
+}
+
+.so-ad-current {
+  font-size: 1.5rem;
+  display: block;
+  height: 280px;
+  transition: opacity .5s ease-in, font-size .5s ease-in;
+   -moz-transition: opacity .5s ease-in, font-size .5s ease-in;
+   -webkit-transition: opacity .5s ease-in, font-size .5s ease-in;
+  opacity: 1;
+
+}
+
+.so-ad-container {
+  position: relative;
+  width: 100%;
+  height: 280px;
+}
+
+/*Arrows*/
+
+.arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  color: #e10a0a;
+  height: 100%;
+  width: 6%;
+  cursor: pointer;
+  opacity:0.5;
+}
+.arrow:hover {
+	color: #e10a0a;
+  opacity: 1;
+}
+.arrow .icon {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.arrow .icon svg {
+  width: 20px;
+}
+.arrow-left {
+  left: -30px;
+}
+.arrow-right {
+  right: -30px;
+}
+.arrow-right .icon {
+  right: 0;
+  position: absolute;
+}
+.arrow-left .icon {
+  left: 0;
+  position: absolute;
+}
+.swing
+{
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+/*Swing Effect*/
+@-webkit-keyframes swing
+{
+15%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(1px);
+        transform: translateX(1px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-1px);
+        transform: translateX(-1px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(1px);
+        transform: translateX(1px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-1px);
+        transform: translateX(-1px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+/*Hide current hero area*/
+
+.soMobile {
+  display: none;
+}
+
+.soPopular h3 {
+  display: none;
+}
+
+.categoryHeading {
+	display:none;
+}
+
+.so-container .categoryHeading {
+	display: block!important;
+}
+
+.catIntro {
+  display: none;
+}
+
+.catIntro__text {
+    background-color: #ffffff!important;
+    height: 300px;
+}

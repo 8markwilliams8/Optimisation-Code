@@ -1,0 +1,36 @@
+/*Background colour*/
+
+.basketFooter__right {
+    background-color: rgba(255, 242, 183, 0.96);
+    margin: 20px -20px -10px;
+    padding: 18px 20px;
+    border-bottom: 1px solid #292d2f;
+    border-top: 1px solid #292d2f;
+}
+
+/*Center Total Price*/
+/*Classes to target*/
+basketFooter__subPrice--big
+basketFooter__subPriceRight--big
+
+.mw-center {
+    width: 100%!important;
+    float: none!important;
+    text-align: center!important;
+}
+
+/*Inline alterative payment CTAs*/
+.basketFooter__alternate {
+    display: inline-block;
+    max-width: 100%;
+    margin: 0 3px 0 3px;
+    vertical-align: middle;
+}
+
+/*Continue Shopping Colour*/
+.basketFooter__continue {
+    border-top: 1px solid #c9cace;
+    margin: 25px 0 0;
+    padding-top: 25px;
+    color: #292d2f;
+}

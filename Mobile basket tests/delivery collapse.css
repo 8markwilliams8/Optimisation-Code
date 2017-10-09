@@ -1,0 +1,30 @@
+.packText {
+    font-size: 12px;
+    font-weight: 500;
+}
+.packHeadline {
+    font-weight: 700;
+}
+.discountCode {
+		border: none;
+}
+.deliveryOptionsForce {
+		display: block!important;
+}
+
+.radio--disabled {
+    display: none;
+}
+
+.basketProduct {
+		border-bottom: none;
+  	padding-bottom: 0;
+}
+
+.basketFooter {
+		border-top: 1px solid #c9cace;
+}
+
+.basketProduct__giftMessage {
+		padding: 40px 0 0;
+}

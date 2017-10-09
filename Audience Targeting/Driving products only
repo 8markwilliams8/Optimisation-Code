@@ -1,0 +1,9 @@
+//Targeting
+window.pageType === 'Product' && window.productCategories.indexOf("Driving") != -1
+
+//Testing
+if (window.pageType === 'Product' && window.productCategories.indexOf("Driving") != -1){
+
+$('.currentPrice').text('£1.00');
+
+}
