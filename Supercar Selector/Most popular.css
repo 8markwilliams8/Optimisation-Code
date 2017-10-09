@@ -1,0 +1,41 @@
+/*#1*/
+.mostPopular {
+    background-color: #e10a0a;
+    height: 20px;
+    position: relative;
+    margin-top: -40px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    border-bottom: 1px solid #ffffff;
+    text-transform: uppercase;
+    padding: 10px 0 30px 0;
+}
+
+/*<div class="mostPopular">Most Popular</div>/*
+
+/*#1 END*/
+
+/*#2*/
+
+.fromPriceBlock {
+    display: block;
+}
+
+.smallFrom {
+    font-size: 12px;
+    display: inline-block;
+}
+
+.fromPrice {
+    font-size: 16px;
+    display: inline-block;
+}
+
+/*
+<div class="fromPriceBlock">
+    <span class="smallFrom">from</span> <span class="fromPrice">£79</span>
+</div>
+*/
+
+/*#2 END*/

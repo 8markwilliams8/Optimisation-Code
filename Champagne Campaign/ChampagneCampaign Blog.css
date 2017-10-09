@@ -1,0 +1,94 @@
+@media only screen and (max-width: 769px) {
+
+  .mw-subTitle {
+  		font-size: 1.25rem!important;
+  }
+
+}
+
+@media only screen and (max-width: 640px) {
+
+  .mobileChampTitle {
+  	display: block!important;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 30px;
+  }
+
+}
+
+@media (max-width: 900px) and (min-width: 769px) {
+.categoryResultsContainer {
+    width: 100%!important;
+}
+}
+
+.mobileChampTitle {
+	display: none;
+}
+
+
+#intropanel {
+	display: none;
+}
+
+.catGrid__row:first-child {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.mw-subTitle {
+		text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 2px 5px rgba(0, 0, 0, 0.6);
+    font-size: 2rem;
+}
+
+.fullWidthHero__textShadow {
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.58), 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.searchDetails {
+		display: none;
+}
+
+.champImg {
+    background-image: url("https://www.virginexperiencedays.co.uk/files/champBlog.jpg");
+}
+
+.twothirds .category-block__overlay {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(34,34,34,0.7)), color-stop(33.3%, rgba(34,34,34,0)));
+    background: linear-gradient(to top, rgba(34, 34, 34, 0.78) 0%, rgba(34, 34, 34, 0.41) 33.3%);
+}
+
+.category-block__lowestPrice {
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    margin: 5px auto 0;
+}
+
+.category-block__title {
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.caseChamp {
+    background-image: url("https://www.virginexperiencedays.co.uk/files/champagneComp.png")
+}
+
+.atChamp {
+    background-image: url("https://www.virginexperiencedays.co.uk/content/img/category/main/410_champaft-listing.jpg");
+}
+
+.tasteChamp {
+    background-image: url("https://www.virginexperiencedays.co.uk/content/img/category/main/401_champtaste-listing.jpg");
+}
+
+.prod1 {
+    background-image: url("https://www.virginexperiencedays.co.uk/content/img/product/large/PBBATS-SP2__01-.jpg");
+}
+
+.prod2 {
+    background-image: url("https://www.virginexperiencedays.co.uk/content/img/product/main/champagne-cinema-evening-for-20114300.jpg");
+}
+
+.readMore {
+		margin-top: 20px;
+}

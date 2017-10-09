@@ -9,8 +9,8 @@ if ($('.breadcrumbs__item').length > 3) {
 
 //SO popular categories dynamic
 if ($('.breadcrumbs li').length < 5) {
-//Grab and create variables
 
+//Grab and create variables
 var categoryFilter = $('.filterGroup__title:contains("Category")').closest('.filterGroup');
 
 var soPopName1 = "Less than £50";
@@ -29,31 +29,43 @@ var soPopName7 = categoryFilter.find('.filterGroup__name:eq(4)').text();
 var soPopLink7 = categoryFilter.find('.js-cat-filter-link:eq(4)').attr("href");
 
 
-//Insert into the SO popular nav
-
+//Insert into the soPopular nav and soMobile nav
 $('.soPopular').html("<div class=\"soPopular\"><h3>Popular Categories</h3><a href="+soPopLink1+"><li>"+soPopName1+"</li></a><a href="+soPopLink2+"><li>"+soPopName2+"</li></a><a href="+soPopLink3+"><li>"+soPopName3+"</li></a><a href="+soPopLink4+"><li>"+soPopName4+"</li></a><a href="+soPopLink5+"><li>"+soPopName5+"</li></a><a href="+soPopLink6+"><li>"+soPopName6+"</li></a><a href="+soPopLink7+"><li>"+soPopName7+"</li></a></div>");
 
-$('.soMobile').html("<div class=\"soMobile\"><h3>Popular Categories</h3><div class=\"col-xs-6\"><a href="+soPopLink1+"><li>"+soPopName1+"</li></a><a href="+soPopLink2+"><li>"+soPopName2+"</li></a><a href="+soPopLink3+"><li>"+soPopName3+"</li></div><div class=\"col-xs-6\"></a><a href="+soPopLink4+"><li>"+soPopName4+"</li></a><a href="+soPopLink5+"><li>"+soPopName5+"</li></a><a href="+soPopLink6+"><li>"+soPopName6+"</li></a><a href="+soPopLink7+"><li>"+soPopName7+"</li></a></div></div>");
+$('.soMobile').html("<div class=\"soMobile\"><h3>Popular Categories</h3><div class=\"col-xs-6\"><a href="+soPopLink1+"><li>"+soPopName1+"</li></a><a href="+soPopLink2+"><li>"+soPopName2+"</li></a><a href="+soPopLink3+"><li>"+soPopName3+"</li><a href="+soPopLink7+"><li>"+soPopName7+"</li></a></div><div class=\"col-xs-6\"></a><a href="+soPopLink4+"><li>"+soPopName4+"</li></a><a href="+soPopLink5+"><li>"+soPopName5+"</li></a><a href="+soPopLink6+"><li>"+soPopName6+"</li></a></div></div>");
 
+//Hide nav options to use later
 $('.soPopular a:eq(6)').hide();
+$('.soMobile a:eq(3)').hide();
 
 }
 
+//Change page title to sub category but if contain offers don't use word in title
 else {
 
-  var h1SubTitle = $('.breadcrumbs__item:nth-child(4)').text();
-  $('.categoryHeading').html('<h1 class="hide-on-mobile categoryHeading">'+h1SubTitle+' Offers</h1>');
+  var grabTitle = $('.breadcrumbs__item:nth-child(4)').text();
 
-}
+  if ($('.breadcrumbs__item:nth-child(4):contains("Offers")').length < 1) {
+      var h1SubTitle = grabTitle += ' Offers';
+  }
+  else {
+  var grabTitle = $('.breadcrumbs__item:nth-child(4)').text();
+    var h1SubTitle = grabTitle;
+  }
+    $('.categoryHeading').html('<h1 class="hide-on-mobile categoryHeading">'+h1SubTitle+'</h1>');
+  }
 
+//Hide ad after first level and only show relevant nav options
 if ($('.breadcrumbs li').length > 3) {
 $('.so-ad-container').hide();
 $('.catIntro__text').css({'height':'200px','min-height':'200px'});
 $('.soPopular a:eq(2)').hide();
 $('.soPopular a:eq(6)').show();
+$('.soMobile a:eq(2)').hide();
+$('.soMobile a:eq(3)').show();
 }
 
-//Special Offers
+//Special Offers product card
 $('.productCard').each(function(i, obj) {
 
 var newFlag = $(".productCard__offer");
@@ -70,8 +82,7 @@ newFlag.hide();
 
 //Carousel
 
-
-  //Auto Ctrls
+//Auto Ctrls
 
   var interval;
    var timer = function(){
@@ -85,7 +96,7 @@ newFlag.hide();
   },5000);
   };
 
-  //On hover pause / reset auto
+//On hover pause / reset auto
 
   $('.so-ad-container').hover(function(ev){
       clearInterval(interval);
@@ -93,7 +104,7 @@ newFlag.hide();
       timer();
   });
 
-  //Next-Prev Ctrls
+//Next-Prev Ctrls
 
     $(".next-mw").click(function() {
       if ($(".so-ad-current").next(".so-ad").length === 0) {
